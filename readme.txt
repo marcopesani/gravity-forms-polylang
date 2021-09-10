@@ -19,7 +19,7 @@ No installation required.
 
 == Changelog ==
 
-= 0.4 =
+= 0.5 =
 * Support for consent checkbox
 * Supporting multiline fields for >50 characters
 * Register strings in admin only
