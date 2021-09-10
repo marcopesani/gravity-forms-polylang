@@ -3,7 +3,7 @@
 Plugin Name: Integrate Gravity Forms + Polylang
 Plugin URI:  https://github.com/pdme/gravity-forms-polylang
 Description: Add form titles, descriptions, field labels, etc, to Polylang string translations
-Version:     0.3
+Version:     0.5
 Author:      Philip Ebels
 Author URI:  https://github.com/pdme
 License:     GPL2
@@ -28,7 +28,7 @@ class GF_PLL_Initialize {
   }    
 }
 
-add_action('init', array('GF_PLL_Initialize', 'register_strings'), 100);
+add_action('admin_init', array('GF_PLL_Initialize', 'register_strings'), 100);
 add_filter('gform_pre_render', array('GF_PLL_Initialize', 'translate_strings'));
 add_filter('gform_pre_process', array('GF_PLL_Initialize', 'translate_strings'));
 

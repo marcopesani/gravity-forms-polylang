@@ -20,6 +20,11 @@ No installation required.
 == Changelog ==
 
 = 0.4 =
+* Support for consent checkbox
+* Supporting multiline fields for >50 characters
+* Register strings in admin only
+
+= 0.4 =
 * Fixed bug that would make input fields from Gravity Forms Add Ons disappear
 
 = 0.3 =
