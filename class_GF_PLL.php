@@ -72,7 +72,7 @@ class GF_PLL {
 
   public function register_strings() {
 
-   if(!preg_match('/^mlang/', $_GET['page']) || !class_exists('GFAPI') || !function_exists('pll_register_string')) return;
+    if(!class_exists('GFAPI') || !function_exists('pll_register_string')) return;
 
     $forms = GFAPI::get_forms();
     foreach ($forms as $form) {
