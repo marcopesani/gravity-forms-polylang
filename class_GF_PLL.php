@@ -79,7 +79,7 @@ class GF_PLL {
       $this->form = $form;
       $this->registered_strings = array();
       $this->iterate_form($form, function($value, $key) {
-        $name = 'gfpll'; // todo: suitable naming
+        $name = "{$this->form['id']} - {$value}";
         $group = "Form #{$this->form['id']}: {$this->form['title']}";
 		$multiline = ( 50 < mb_strlen( $value ) );
         pll_register_string($name, $value, $group, $multiline);
